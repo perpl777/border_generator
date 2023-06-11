@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Border Generator</title>
+</head>
+<body class="page">
+
+  <div class="wrapper">
+    <div class="borderGen">
+
+      <div class="borderGen-preview">
+        <div class="borderGen-preview__element" id="element"></div>
+      </div>
+
+      <div class="borderGen-settings">
+        <div class="borderGen-property-container">
+          <label for="size">Size</label>
+          <input type="range" class="border-property" min="1" max="50" value="1" id="size" />
+        </div>
+        <div class="borderGen-property-container borderGen-property-container_oneline">
+          <input type="color" class="border-property" id="border-color" />
+          <label for="border-color">Border color</label>
+        </div>
+        <div class="borderGen-property-container">
+          <label>
+            <input type="radio" class="border-property" name="border-style" value="solid" checked>
+            Solid
+          </label>
+          <label>
+              <input type="radio" class="border-property" name="border-style" value="dashed">
+              Dashed
+          </label>
+          <label>
+              <input type="radio" class="border-property" name="border-style" value="double">
+              Double
+          </label>
+          <label>
+              <input type="radio" class="border-property" name="border-style" value="dotted">
+              Dotted
+          </label>
+          <label>
+              <input type="radio" class="border-property" name="border-style" value="ridge">
+              Ridge
+          </label>
+          <label>
+              <input type="radio" class="border-property" name="border-style" value="inset">
+              Inset
+          </label>
+          <label>
+              <input type="radio" class="border-property" name="border-style" value="outset">
+              Outset
+          </label>
+          <label>
+              <input type="radio" name="border-style" value="groove">
+              Groove
+          </label>
+        </div>
+      </div>
+
+      <div class="borderGen-result">
+        <textarea class="borderGen-result__css" id="result-css" rows="2"></textarea>
+        <button class="borderGen-result__btn-copy" id="btn-copy">Copy</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
